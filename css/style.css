@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+header {
+    height: 70px;
+
+    /* debug */
+    background-color: aquamarine;
+}
+
+#jumbotron {
+    padding: 100px 0;
+    /* debug */
+    height: 500px;
+    background-color: rgb(114, 173, 207);
+}
+
+.contenitore {
+    width: 90%;
+    margin: 0 auto;
+    /* debug */
+    background-color: rgb(114, 128, 207);
+}
+
+.col {
+    float: left;
+}
+
+#jumbotron .col.sx {
+    width: 50%;
+    /* float: left; */
+    /* debug */
+    height: 100px;
+    background-color: rgb(228, 65, 214);
+}
+
+#jumbotron .col.dx {
+    width: 50%;
+    /* float: left; */
+    /* debug */
+    height: 200px;
+    background-color: rgb(134, 27, 125);
+}
+
+.contenitore.stretto {
+    width: 70%;
+}
+
+#piano-business {
+    /* debug */
+    height: 500px;
+    background-color: rgb(30, 134, 27);
+}
+
+#piu-operazioni {
+    /* debug */
+    height: 500px;
+    background-color: rgb(192, 170, 43);
+}
+
+#team-top .col.sx {
+    width: 30%;
+    /* debug */
+    height: 200px;
+    background-color: aquamarine;
+}
+
+#team-top .col.dx {
+    width: 30%;
+
+    /* debug */
+    height: 100px;
+    background-color: rgb(134, 27, 125);
+}
+
+#team-top .col.cx {
+    width: 40%;
+    
+    /* debug */
+    height: 200px;
+    background-color: rgb(54, 48, 143);
+}
+
+#team-bottom .col.sx {
+    width: 50%;
+    /* debug */
+    background-color: aquamarine;
+}
+
+#team-bottom .col.dx {
+    width: 50%;
+
+    /* debug */
+    height: 100px;
+    background-color: rgb(134, 27, 125);
+}
+
+#domande-frequenti {
+    /* debug */
+    height: 500px;
+    background-color: rgb(43, 192, 105);
+}
+
+footer {
+    background-color: black;
+    padding: 100px 0 30px;
+}
+
+#footer-top .col {
+    width: 20%;
+    border: solid 1px black;
+
+    /* debug */
+    height: 200px;
+}
+
+#footer-bottom {
+    border-top: solid 1px white;
+    padding-top: 30px;
+}
