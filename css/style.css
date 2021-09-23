@@ -24,6 +24,10 @@ body {
     margin: 0 auto;
 }
 
+.contenitore.stretto {
+    width: 70%;
+}
+
 .col {
     float: left;
 }
@@ -36,6 +40,7 @@ a {
     color: white;
     background-color: rgb(9, 121, 248);
     padding: 10px 20px;
+    text-align: center;
 }
 
 /* CSS relativo all'header con logo e nav */
@@ -87,7 +92,7 @@ header nav ul li a {
 }
 
 #jumbotron h1 {
-    font-size: 40px;
+    font-size: 50px;
     margin-bottom: 30px;
 }
 
@@ -114,15 +119,101 @@ header nav ul li a {
     max-width: 100%;
 }
 
-.contenitore.stretto {
-    width: 70%;
+
+/* CSS relativo al main */
+
+/* Sezione relativa al piano Dropbox business */
+
+
+#piano-business .col {
+    width: calc(90% / 3);
+
+    /* debug */
+    border: grey 1px solid;
 }
 
-#piano-business {
-    /* debug */
-    height: 500px;
-    background-color: rgb(30, 134, 27);
+#piano-business .col.cx {
+    margin: 0 5%;
 }
+
+#piano-business .fatturazione {
+    margin: 30px 0 20px;
+}
+
+#piano-business .fatturazione .cerchio {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid 1px grey;
+}
+
+#piano-business .fatturazione .cerchio.blu {
+    border: solid 5px rgb(9, 121, 248);
+}
+
+#piano-business .fatturazione span:nth-of-type(even) {
+    display: inline-block;
+    margin-right: 20px;
+    height: 100%;
+    line-height: 100%;
+    vertical-align: middle;
+}
+
+#piano-business .tipo-contratto {
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: grey 1px solid;
+}
+
+#piano-business .contenitore-sezione {
+    padding: 20px 20px 50px;
+}
+
+#piano-business .prezzo {
+    font-weight: 700;
+    margin: 20px 0 10px;
+}
+
+#piano-business .tipo {
+    color: grey;
+}
+
+#piano-business .caratteristiche {
+    margin: 10px 0;
+}
+
+#piano-business .btn {
+    display: block;
+    margin: 30px 0;
+}
+
+#piano-business div.bordo {
+    margin-bottom: 60px;
+}
+
+#piano-business span.bordo {
+    padding-bottom: 30px;
+    border-bottom: grey 1px solid;
+}
+
+#piano-business ul {
+    list-style-type: none;
+}
+
+#piano-business ul li {
+    margin: 20px 0;
+}
+
+#piano-business ul li i {
+    color: rgb(9, 121, 248);
+}
+
+
+
+
+
+
 
 #piu-operazioni {
     /* debug */
