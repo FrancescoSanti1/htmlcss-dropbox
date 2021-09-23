@@ -1,3 +1,5 @@
+/* Regole generali */
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
 * {
@@ -8,6 +10,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
 }
 
 .clearfix::after {
@@ -16,45 +19,99 @@ body {
     clear: both;
 }
 
-header {
-    height: 70px;
-
-    /* debug */
-    background-color: aquamarine;
-}
-
-#jumbotron {
-    padding: 100px 0;
-    /* debug */
-    height: 500px;
-    background-color: rgb(114, 173, 207);
-}
-
 .contenitore {
     width: 90%;
     margin: 0 auto;
-    /* debug */
-    background-color: rgb(114, 128, 207);
 }
 
 .col {
     float: left;
 }
 
+a {
+    text-decoration: none;
+}
+
+.btn {
+    color: white;
+    background-color: rgb(9, 121, 248);
+    padding: 10px 20px;
+}
+
+/* CSS relativo all'header con logo e nav */
+
+header {
+    height: 70px;
+    line-height: 70px;
+    padding: 0 20px;
+}
+
+#logo {
+    float: left;
+    margin-right: 20px;
+}
+
+#logo img {
+    vertical-align: middle;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+header nav li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    padding: 10px;
+    margin: 0 10px;
+    color: black;
+}
+
+#nav-sx {
+    float: left;
+}
+
+#nav-dx {
+    float: right;
+}
+
+/* CSS relativo al jumbotron */
+
+#jumbotron {
+    height: 650px;
+    padding-top: 100px;
+    margin-bottom: 200px;
+    background-color: rgb(172, 205, 224);
+}
+
+#jumbotron h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
 #jumbotron .col.sx {
-    width: 50%;
-    /* float: left; */
-    /* debug */
-    height: 100px;
-    background-color: rgb(228, 65, 214);
+    width: 40%;
+    padding-right: 100px;
+}
+
+#jumbotron .col.sx .btn {
+    display: inline-block;
+    margin: 20px 0 10px;
+}
+
+#jumbotron .col.sx i {
+    margin-top: 30px;
+    font-size: 30px;
 }
 
 #jumbotron .col.dx {
-    width: 50%;
-    /* float: left; */
-    /* debug */
-    height: 200px;
-    background-color: rgb(134, 27, 125);
+    width: 60%;
+}
+
+#jumbotron .col.dx img {
+    max-width: 100%;
 }
 
 .contenitore.stretto {
