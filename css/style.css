@@ -439,9 +439,25 @@ header nav ul li a {
 
 #domande-frequenti {
     margin: 100px 0;
-    /* debug */
-    height: 500px;
-    background-color: rgb(43, 192, 105);
+}
+
+#domande-frequenti h2 {
+    padding-bottom: 40px;
+    border-bottom: lightgrey 1px solid;
+}
+
+#domande-frequenti .domanda {
+    padding: 30px 0;
+    border-bottom: lightgrey 1px solid;
+}
+
+#domande-frequenti p {
+    font-weight: 700;
+}
+
+#domande-frequenti .domanda .col.dx {
+    float: right;
+    padding-right: 30px;
 }
 
 footer {
