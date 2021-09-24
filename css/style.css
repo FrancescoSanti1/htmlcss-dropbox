@@ -60,6 +60,7 @@ header {
     padding: 0 20px;
     position: fixed;
     background-color: white;
+    z-index: 50;
 }
 
 #logo {
@@ -315,45 +316,129 @@ header nav ul li a {
 }
 
 
+/* CSS relativo alla sezione dei team che utilizzano Dropbox */
+
+#scopri {
+    display: block;
+    margin: 30px 0;
+    color: rgb(9, 121, 248);
+    text-decoration: underline;
+}
 
 #team-top .col.sx {
     width: 30%;
-    /* debug */
-    height: 200px;
-    background-color: aquamarine;
 }
 
 #team-top .col.dx {
     width: 30%;
-
-    /* debug */
-    height: 100px;
-    background-color: rgb(134, 27, 125);
 }
 
 #team-top .col.cx {
     width: 40%;
-    
-    /* debug */
+    height: 400px;
+    background-color: rgb(236, 236, 236);
+    padding: 50px;
+}
+
+#team-top .logo-azienda {
+    float: left;
+    width: 50%;
     height: 200px;
-    background-color: rgb(54, 48, 143);
+    position: relative;
+}
+
+#team-top .col.sx img, #team-top .col.dx img {
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#team-top .col.cx .logo-centrale {
+    padding-bottom: 20px;
+}
+
+#team-top .col.cx .logo-centrale img {
+    width: 20%;
+}
+
+#team-top .col.cx hr {
+    width: 30px;
+    color: grey;
+}
+
+#team-top .col.cx p {
+    padding-top: 40px;
+}
+
+#team-top .col.sx .logo-azienda:nth-of-type(1) {
+    background-color: teal;
+}
+
+#team-top .col.sx .logo-azienda:nth-of-type(2) {
+    background-color: thistle;
+}
+
+#team-top .col.sx .logo-azienda:nth-of-type(3) {
+    background-color: tomato;
+}
+
+#team-top .col.sx .logo-azienda:nth-of-type(4) {
+    background-color: turquoise;
+}
+
+#team-top .col.dx .logo-azienda:nth-of-type(1) {
+    background-color: coral;
+}
+
+#team-top .col.dx .logo-azienda:nth-of-type(2) {
+    background-color: rgb(95, 214, 111);
+}
+
+#team-top .col.dx .logo-azienda:nth-of-type(3) {
+    background-color: rgb(187, 153, 202);
+}
+
+#team-top .col.dx .logo-azienda:nth-of-type(4) {
+    background-color: rgb(203, 204, 129);
+}
+
+
+
+/* CSS relativo al box "Porta Dropbox nella tua azienda */
+
+#team-bottom {
+    background-color: rgb(167, 192, 240);
+    padding: 100px 0;
 }
 
 #team-bottom .col.sx {
     width: 50%;
-    /* debug */
-    background-color: aquamarine;
+    padding-right: 10%;
+}
+
+#team-bottom .col.sx h2 {
+    color: rgb(155, 10, 39);
 }
 
 #team-bottom .col.dx {
-    width: 50%;
-
-    /* debug */
-    height: 100px;
-    background-color: rgb(134, 27, 125);
+    width: 40%;
+    margin-left: 10%;
+    text-align: right;
 }
 
+#team-bottom .col.dx .btn {
+    display: inline-block;
+    color: black;
+    background-color: white;
+}
+
+
+/* CSS relativo alla sezione "Domande frequenti" */
+
 #domande-frequenti {
+    margin: 100px 0;
     /* debug */
     height: 500px;
     background-color: rgb(43, 192, 105);
