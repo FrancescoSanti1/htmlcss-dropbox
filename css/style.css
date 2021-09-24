@@ -40,6 +40,10 @@ h3 {
     float: left;
 }
 
+ul {
+    list-style-type: none;
+}
+
 a {
     text-decoration: none;
 }
@@ -71,10 +75,6 @@ header {
 
 #logo img {
     vertical-align: middle;
-}
-
-nav ul {
-    list-style-type: none;
 }
 
 header nav {
@@ -460,20 +460,40 @@ header nav ul li a {
     padding-right: 30px;
 }
 
+
+/* CSS relativo al footer */
+
 footer {
     background-color: black;
     padding: 100px 0 30px;
 }
 
-#footer-top .col {
-    width: 20%;
-    border: solid 1px black;
+#footer-top {
+    padding-bottom: 80px;
+}
 
-    /* debug */
-    height: 200px;
+#footer-top .col {
+    color: white;
+    width: 20%;
+}
+
+#footer-top .col h3 {
+    margin-bottom: 20px;
+}
+
+#footer-top .col a {
+    display: block;
+    color: white;
+    margin-bottom: 10px;
+}
+
+footer hr {
+    width: 150px;
+    border: none;
+    border-top: 1px grey solid;
 }
 
 #footer-bottom {
-    border-top: solid 1px white;
     padding-top: 30px;
+    color: grey;
 }
