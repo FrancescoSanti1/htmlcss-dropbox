@@ -288,12 +288,33 @@ header nav ul li a {
 }
 
 
+/* Sezione relativa alla sezione "Esegui più operazione con Dropbox" */
 
 #piu-operazioni {
-    /* debug */
-    height: 500px;
-    background-color: rgb(192, 170, 43);
+    margin: 100px 0 150px;
 }
+
+#piu-operazioni .riga {
+    margin-top: 50px;
+}
+
+#piu-operazioni .col {
+    width: 30%;
+}
+
+#piu-operazioni .col.cx {
+    margin: 0 5%;
+}
+
+#piu-operazioni img {
+    width: 100%;
+}
+
+#piu-operazioni h3 {
+    margin-bottom: 30px;
+}
+
+
 
 #team-top .col.sx {
     width: 30%;
