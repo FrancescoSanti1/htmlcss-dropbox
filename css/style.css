@@ -13,6 +13,14 @@ body {
     font-size: 14px;
 }
 
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
 .clearfix::after {
     content: "";
     display: table;
@@ -47,13 +55,17 @@ a {
 
 header {
     height: 70px;
+    width: 100%;
     line-height: 70px;
     padding: 0 20px;
+    position: fixed;
+    background-color: white;
 }
 
 #logo {
     float: left;
-    margin-right: 20px;
+    padding-right: 20px;
+    width: 10%;
 }
 
 #logo img {
@@ -62,6 +74,11 @@ header {
 
 nav ul {
     list-style-type: none;
+}
+
+header nav {
+    float: left;
+    width: 90%;
 }
 
 header nav li {
@@ -85,8 +102,8 @@ header nav ul li a {
 /* CSS relativo al jumbotron */
 
 #jumbotron {
-    height: 650px;
-    padding-top: 100px;
+    height: 750px;
+    padding-top: 170px;
     margin-bottom: 200px;
     background-color: rgb(172, 205, 224);
 }
@@ -129,7 +146,7 @@ header nav ul li a {
     width: calc(90% / 3);
 
     /* debug */
-    border: grey 1px solid;
+    border: lightgrey 1px solid;
 }
 
 #piano-business .col.cx {
@@ -144,6 +161,7 @@ header nav ul li a {
     display: inline-block;
     height: 20px;
     width: 20px;
+    vertical-align: middle;
     border-radius: 50%;
     border: solid 1px grey;
 }
@@ -155,19 +173,18 @@ header nav ul li a {
 #piano-business .fatturazione span:nth-of-type(even) {
     display: inline-block;
     margin-right: 20px;
-    height: 100%;
-    line-height: 100%;
     vertical-align: middle;
 }
 
 #piano-business .tipo-contratto {
     text-align: center;
     padding: 10px 0;
-    border-bottom: grey 1px solid;
+    border-bottom: lightgrey 1px solid;
 }
 
 #piano-business .contenitore-sezione {
     padding: 20px 20px 50px;
+    min-height: 750px;
 }
 
 #piano-business .prezzo {
@@ -194,7 +211,7 @@ header nav ul li a {
 
 #piano-business span.bordo {
     padding-bottom: 30px;
-    border-bottom: grey 1px solid;
+    border-bottom: lightgrey 1px solid;
 }
 
 #piano-business ul {
@@ -209,9 +226,66 @@ header nav ul li a {
     color: rgb(9, 121, 248);
 }
 
+/* CSS relativo alla sottosezione Team sotto alle tre colonne */
 
+#piano-business .team {
+    margin: 30px 0 80px;
+    border: lightgrey 1px solid;
+}
 
+#piano-business .team .clearfix {
+    padding: 20px;
+}
 
+#piano-business .team .col.sx {
+    width: 60%;
+    border: none;
+}
+
+#piano-business .team .col.sx .spaziatura {
+    font-weight: 700;
+    margin: 10px 0 30px
+}
+
+#piano-business .team .col.dx {
+    width: 30%;
+    float: right;
+    border: none;
+}
+
+#piano-business .team .btn {
+    margin: 0;
+}
+
+/* CSS relativo alla sottosezione "Entra in contatto con un partner Dropbox" */
+
+#partner .col {
+    border: none;
+}
+
+#partner .col.sx {
+    width: 60%;
+}
+
+#partner .col.sx img {
+    width: 80%;
+}
+
+#partner .col.dx {
+    width: 40%;
+    padding-top: 50px;
+}
+
+#partner .col.dx p {
+    margin-top: 20px;
+}
+
+#partner .col.dx .btn {
+    background-color: white;
+    color: black;
+    border: black 1px solid;
+    display: inline-block;
+}
 
 
 
