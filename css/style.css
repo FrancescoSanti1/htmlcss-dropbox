@@ -108,6 +108,32 @@ header nav ul li a:hover {
     float: right;
 }
 
+/* Parte relativo al tentativo di dropdown menu */
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+nav .sottomenu {
+    display: none;
+    position: absolute;
+    background-color: white;
+}
+
+nav .sottomenu li {
+    height: min-content;
+}
+
+nav .sottomenu a:hover {
+    border: none;
+    background-color: rgb(247, 247, 247);
+}
+
+.dropdown:hover .sottomenu {
+    display: block;
+}
+
 /* CSS relativo al jumbotron */
 
 #jumbotron {
