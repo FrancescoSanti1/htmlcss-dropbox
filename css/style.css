@@ -55,6 +55,10 @@ a {
     text-align: center;
 }
 
+.btn:hover {
+    background-color: rgb(66, 151, 248);
+}
+
 /* CSS relativo all'header con logo e nav */
 
 header {
@@ -92,6 +96,10 @@ header nav ul li a {
     color: black;
 }
 
+header nav ul li a:hover {
+    border-bottom: 2px solid grey;
+}
+
 #nav-sx {
     float: left;
 }
@@ -105,7 +113,7 @@ header nav ul li a {
 #jumbotron {
     height: 750px;
     padding-top: 170px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
     background-color: rgb(172, 205, 224);
 }
 
@@ -127,6 +135,7 @@ header nav ul li a {
 #jumbotron .col.sx i {
     margin-top: 30px;
     font-size: 30px;
+    color: black;
 }
 
 #jumbotron .col.dx {
@@ -142,6 +151,9 @@ header nav ul li a {
 
 /* Sezione relativa al piano Dropbox business */
 
+#piano-business {
+    padding-top: 100px;
+}
 
 #piano-business .col {
     width: calc(90% / 3);
@@ -206,13 +218,18 @@ header nav ul li a {
     margin: 30px 0;
 }
 
-#piano-business div.bordo {
+#piano-business div.acquista {
     margin-bottom: 60px;
 }
 
-#piano-business span.bordo {
+#piano-business span.acquista {
     padding-bottom: 30px;
     border-bottom: lightgrey 1px solid;
+}
+
+#piano-business a.acquista {
+    color: rgb(9, 121, 248);
+    text-decoration: underline;
 }
 
 #piano-business ul {
@@ -279,6 +296,7 @@ header nav ul li a {
 
 #partner .col.dx p {
     margin-top: 20px;
+    line-height: 2em;
 }
 
 #partner .col.dx .btn {
@@ -286,6 +304,10 @@ header nav ul li a {
     color: black;
     border: black 1px solid;
     display: inline-block;
+}
+
+#partner .col.dx .btn:hover {
+    background-color: rgb(247, 247, 247);
 }
 
 
@@ -338,6 +360,7 @@ header nav ul li a {
     height: 400px;
     background-color: rgb(236, 236, 236);
     padding: 50px;
+    overflow: auto;
 }
 
 #team-top .logo-azienda {
@@ -348,6 +371,7 @@ header nav ul li a {
 }
 
 #team-top .col.sx img, #team-top .col.dx img {
+    filter: invert(100%);
     width: 40%;
     position: absolute;
     top: 50%;
@@ -434,6 +458,11 @@ header nav ul li a {
     background-color: white;
 }
 
+#team-bottom .col.dx .btn:hover {
+    background-color: rgb(247, 247, 247);
+}
+
+
 
 /* CSS relativo alla sezione "Domande frequenti" */
 
@@ -447,17 +476,38 @@ header nav ul li a {
 }
 
 #domande-frequenti .domanda {
-    padding: 30px 0;
+    padding: 20px 0;
     border-bottom: lightgrey 1px solid;
 }
 
-#domande-frequenti p {
+#domande-frequenti .domanda p {
     font-weight: 700;
+}
+
+#domande-frequenti .domanda .col.sx {
+    padding: 10px 0;
 }
 
 #domande-frequenti .domanda .col.dx {
     float: right;
-    padding-right: 30px;
+    padding-right: 20px;
+}
+
+#domande-frequenti .domanda .col.dx i {
+    padding: 10px;
+}
+
+#domande-frequenti .domanda .col.dx i:hover #domande-frequenti .risposta {
+    display: block;
+}
+
+#domande-frequenti .risposta {
+    padding: 10px 20% 10px 3%;
+    display: none;
+}
+
+#domande-frequenti .risposta p {
+    font-weight: 400;
 }
 
 
