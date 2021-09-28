@@ -182,7 +182,7 @@ nav .sottomenu a:hover {
 }
 
 #piano-business .col {
-    width: calc(90% / 3);
+    width: 30%;
 
     /* debug */
     border: lightgrey 1px solid;
@@ -203,6 +203,10 @@ nav .sottomenu a:hover {
     vertical-align: middle;
     border-radius: 50%;
     border: solid 1px grey;
+}
+
+#piano-business .fatturazione .cerchio:hover {
+    cursor: pointer;
 }
 
 #piano-business .fatturazione .cerchio.blu {
@@ -388,6 +392,10 @@ nav .sottomenu a:hover {
 #team-top .col.cx {
     width: 50%;
     padding: 50px;
+
+    /* Non funzionano allo scopo di agganciarlo all'altezza delle altre due colonne quando la pagina si retringe un po' */
+    /* max-height: fit-content;
+    overflow: auto; */
 }
 
 #team-top .logo-azienda {
@@ -577,6 +585,10 @@ footer {
     display: block;
     color: white;
     margin-bottom: 10px;
+}
+
+#footer-top .col a:hover {
+    text-decoration: underline;
 }
 
 footer hr {
